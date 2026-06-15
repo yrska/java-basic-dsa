@@ -7,7 +7,8 @@ public class Main {
     
     
     public static void main(String[] args) {
-        System.out.println("Enter 1 for Data Structures, 2 for Algorithms: ");
+        System.out.println("1: Data Structures");
+        System.out.println("2: Algorithms");
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
         scanner.close();

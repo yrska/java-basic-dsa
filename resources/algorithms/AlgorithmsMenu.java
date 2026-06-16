@@ -2,13 +2,25 @@ package resources.algorithms;
 
 import resources.Menu;
 
-public class AlgorithmsMenu implements Menu {
+public class AlgorithmsMenu extends Menu {
 
     @Override
-    public void displayMenu() {
-        System.out.println("Algorithms Menu:");
-        System.out.println("1. View All Algorithms");
-        System.out.println("2. Practice Random Algorithms");
+    protected void displayAdditionalOptions() {
         System.out.println("3. Practice Specific Algorithms");
+    }
+
+    @Override
+    protected String getMenuTitle() {
+        return "Algorithms Menu";
+    }
+
+    @Override
+    protected String getMenuItemLabelPlural() {
+        return "Algorithms";
+    }
+
+    @Override
+    public void parseObjects() {
+
     }
 }

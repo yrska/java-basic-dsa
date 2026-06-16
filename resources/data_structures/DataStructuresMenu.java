@@ -2,13 +2,20 @@ package resources.data_structures;
 
 import resources.Menu;
 
-public class DataStructuresMenu implements Menu {
+public class DataStructuresMenu extends Menu {
     @Override
-    public void displayMenu() {
-        System.out.println("Data Structures Menu:");
-        System.out.println("1. View All Data Structures");
-        System.out.println("2. Practice Random Data Structures");
+    protected void displayAdditionalOptions() {
         System.out.println("3. Practice Specific Data Structure Methods");
         System.out.println("4. Practice Specific Data Structure Time Complexities");
+    }
+
+    @Override
+    protected String getMenuTitle() {
+        return "Data Structures Menu";
+    }
+
+    @Override
+    protected String getMenuItemLabelPlural() {
+        return "Data Structures";
     }
 }
